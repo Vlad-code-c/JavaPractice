@@ -14,4 +14,4 @@ Să se elaboreze un program care, folosind meniuri şi subprograme, să realizez
 
 
 
-JDBC Driver: [click](#https://dev.mysql.com/downloads/connector/j/)
+JDBC Driver: [click](https://dev.mysql.com/downloads/connector/j/)
