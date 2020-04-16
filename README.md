@@ -14,4 +14,4 @@ Să se elaboreze un program care, folosind meniuri şi subprograme, să realizez
 
 
 
-Hello, this is some text to fill in this, [here](#place-2), is a link to the second place.
+JDBC Driver: [click](#https://dev.mysql.com/downloads/connector/j/)
