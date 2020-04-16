@@ -13,7 +13,7 @@ Să se elaboreze un program care, folosind meniuri şi subprograme, să realizez
   
   
   
-###References:  
+### References:  
 JDBC Driver: [click](https://dev.mysql.com/downloads/connector/j/)  
 Scene Builder: [here](https://gluonhq.com/products/scene-builder/)  
 JavaFx Documentation: [doc](https://openjfx.io/)  
