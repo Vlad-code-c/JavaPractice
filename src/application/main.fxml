@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlers.ControllerMain">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="198.0" style="-fx-background-color: #2A2E37;" styleClass="menu">
+         <children>
+            <Button fx:id="buttonMenuAddRecords" layoutX="34.0" layoutY="20.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="Add records">
+               <font>
+                  <Font size="11.0" />
+               </font></Button>
+            <Button fx:id="buttonShowRecords" layoutX="34.0" layoutY="74.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="Show records">
+               <font>
+                  <Font size="11.0" />
+               </font></Button>
+            <Line endX="-4.799957275390625" endY="258.6000061035156" layoutX="184.0" layoutY="127.0" startX="-4.799957275390625" startY="-111.5" style="-fx-stroke: #B2B2B2;" />
+            <Button fx:id="maxRecordsButton" layoutX="34.0" layoutY="182.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="Maxime">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonShowSortedRecords" layoutX="34.0" layoutY="128.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="DESC records">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="patrateSaveTab" layoutX="34.0" layoutY="238.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="Patrate">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="interschimba" layoutX="34.0" layoutY="290.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="Interschimba">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="inaltimeaTurnuluiMaximala" layoutX="34.0" layoutY="342.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="119.0" stylesheets="@style.css" text="Inaltimea max">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="addRecords" layoutX="192.0" prefHeight="400.0" prefWidth="409.0" style="-fx-background-color: #2A2E37;">
+         <children>
+            <Button fx:id="buttonAddRecords" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="316.0" layoutY="309.0" mnemonicParsing="false" stylesheets="@style.css" text="Add" textAlignment="RIGHT" />
+            <Label layoutX="151.0" layoutY="23.0" stylesheets="@style.css" text="Adaugati turnuri noi">
+               <font>
+                  <Font name="Ink Free" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="89.0" stylesheets="@style.css" text="Inaltimea" />
+            <Label layoutX="40.0" layoutY="124.0" stylesheets="@style.css" text="Lungimea" />
+            <Label layoutX="40.0" layoutY="157.0" stylesheets="@style.css" text="Latimea" />
+            <TextField fx:id="height" layoutX="192.0" layoutY="85.0" />
+            <TextField fx:id="long_" layoutX="192.0" layoutY="120.0" />
+            <TextField fx:id="width" layoutX="192.0" layoutY="155.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="showRecords" layoutX="191.0" prefHeight="400.0" prefWidth="410.0" style="-fx-background-color: #2A2E37;" visible="false">
+         <children>
+            <Button fx:id="doublePrev" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" stylesheets="@style.css" text="&lt;&lt;" />
+            <Button fx:id="doubleNext" layoutX="338.0" layoutY="347.0" mnemonicParsing="false" stylesheets="@style.css" text="&gt;&gt;" />
+            <Button fx:id="prev" layoutX="67.0" layoutY="347.0" mnemonicParsing="false" stylesheets="@style.css" text="&lt;" />
+            <Button fx:id="next" layoutX="296.0" layoutY="346.0" mnemonicParsing="false" stylesheets="@style.css" text="&gt;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="21.0" stylesheets="@style.css" text="Datele inregistrate" />
+            <Label layoutX="86.0" layoutY="93.0" stylesheets="@style.css" text="Inaltimea" />
+            <Label layoutX="86.0" layoutY="128.0" stylesheets="@style.css" text="Lungimea" />
+            <Label layoutX="86.0" layoutY="161.0" stylesheets="@style.css" text="Latimea" />
+            <Label fx:id="labelHeight" layoutX="286.0" layoutY="91.0" stylesheets="@style.css" text="0" />
+            <Label fx:id="labelLong" layoutX="286.0" layoutY="126.0" stylesheets="@style.css" text="0" />
+            <Label fx:id="labelWidth" layoutX="286.0" layoutY="161.0" stylesheets="@style.css" text="0" />
+            <Label layoutX="86.0" layoutY="60.0" stylesheets="@style.css" text="Id turn" />
+            <Label fx:id="labelId" layoutX="286.0" layoutY="58.0" stylesheets="@style.css" text="0" />
+            <Button fx:id="showVisual" layoutX="116.0" layoutY="346.0" mnemonicParsing="false" stylesheets="@style.css" text="Show 3d" />
+            <Button fx:id="buttonDelete" layoutX="215.0" layoutY="346.0" mnemonicParsing="false" stylesheets="@style.css" text="Sterge" />
+            <Label layoutX="87.0" layoutY="194.0" stylesheets="@style.css" text="Volumul" />
+            <Label fx:id="labelVolum" layoutX="287.0" layoutY="194.0" stylesheets="@style.css" text="0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="visualTabShow" style="-fx-background-color: #2A2E37;" stylesheets="@style.css" visible="false">
+         <children>
+            <ImageView fitHeight="382.0" fitWidth="539.0" layoutX="87.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../libs/img/cub3.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="W" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="41.0" layoutY="305.0" prefHeight="22.0" prefWidth="105.0" text="W">
+               <cursor>
+                  <Cursor fx:constant="NE_RESIZE" />
+               </cursor></Label>
+            <Label fx:id="H" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="9.0" layoutY="166.0" prefHeight="26.0" prefWidth="84.0" text="H" textAlignment="RIGHT">
+               <cursor>
+                  <Cursor fx:constant="V_RESIZE" />
+               </cursor></Label>
+            <Label fx:id="L" layoutX="360.0" layoutY="351.0" text="L">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor></Label>
+            <Button fx:id="visionClose" layoutX="552.0" layoutY="16.0" mnemonicParsing="false" text="x" />
+            <ImageView fx:id="LImage" fitHeight="150.0" fitWidth="231.0" layoutX="215.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../libs/img/cub/W_White.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="WImage" fitHeight="70.0" fitWidth="315.0" layoutX="131.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../libs/img/cub/L_WHITE.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="HImage" fitHeight="207.0" fitWidth="84.0" layoutX="132.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../libs/img/cub/H_WHITE.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="aria" layoutX="33.0" layoutY="32.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="maximTab" layoutX="193.0" prefHeight="388.0" prefWidth="403.0" style="-fx-background-color: #2A2E37;" visible="false">
+         <children>
+            <Button fx:id="minPrev" layoutX="14.0" layoutY="347.0" mnemonicParsing="false" stylesheets="@style.css" text="&lt;" />
+            <Button fx:id="maxNext" layoutX="338.0" layoutY="347.0" mnemonicParsing="false" stylesheets="@style.css" text="&gt;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="20.0" stylesheets="@style.css" text="Datele maxime" />
+            <Label fx:id="inaltimeaMaxLabel" layoutX="86.0" layoutY="93.0" stylesheets="@style.css" text="Inaltimea max" />
+            <Label fx:id="lungimeaMaxLabel" layoutX="86.0" layoutY="128.0" stylesheets="@style.css" text="Lungimea max" />
+            <Label fx:id="latimeaMaxLabel" layoutX="86.0" layoutY="161.0" stylesheets="@style.css" text="Latimea max" />
+            <Label fx:id="labelHeightMax" layoutX="286.0" layoutY="91.0" stylesheets="@style.css" text="0" />
+            <Label fx:id="labelLongMax" layoutX="286.0" layoutY="126.0" stylesheets="@style.css" text="0" />
+            <Label fx:id="labelWidthMax" layoutX="286.0" layoutY="161.0" stylesheets="@style.css" text="0" />
+            <Label fx:id="labelVolumMax" layoutX="86.0" layoutY="196.0" stylesheets="@style.css" text="Volumul max" />
+            <Label fx:id="volumMax" layoutX="286.0" layoutY="198.0" stylesheets="@style.css" text="0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="patrate" layoutX="184.0" layoutY="-3.0" prefHeight="400.0" prefWidth="409.0" style="-fx-background-color: #2A2E37;" visible="false">
+         <children>
+            <Button fx:id="buttonAddFile" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="316.0" layoutY="309.0" mnemonicParsing="false" stylesheets="@style.css" text="Add" textAlignment="RIGHT" />
+            <Label layoutX="121.0" layoutY="25.0" stylesheets="@style.css" text="Adaugati datele in fisier">
+               <font>
+                  <Font name="Ink Free" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="path" layoutX="205.0" layoutY="89.0" stylesheets="@style.css" />
+            <Label layoutX="61.0" layoutY="88.0" stylesheets="@style.css" text="File Path" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="interschimbaTab" layoutX="186.0" layoutY="4.0" prefHeight="388.0" prefWidth="410.0" style="-fx-background-color: #2A2E37;" visible="false">
+         <children>
+            <Button fx:id="interschimbaButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="311.0" layoutY="343.0" mnemonicParsing="false" stylesheets="@style.css" text="Schimba" textAlignment="RIGHT" />
+            <Label layoutX="121.0" layoutY="25.0" stylesheets="@style.css" text="Interschimbarea datele">
+               <font>
+                  <Font name="Ink Free" size="12.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="HW" layoutX="59.0" layoutY="103.0" mnemonicParsing="false" styleClass="radio" stylesheets="@style.css" text="Schimba H cu W">
+               <toggleGroup>
+                  <ToggleGroup fx:id="schimb" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="HL" layoutX="59.0" layoutY="141.0" mnemonicParsing="false" styleClass="radio" stylesheets="@style.css" text="Schimba H cu L" toggleGroup="$schimb" />
+            <RadioButton fx:id="WL" layoutX="59.0" layoutY="179.0" mnemonicParsing="false" styleClass="radio" stylesheets="@style.css" text="Schimba W cu L" toggleGroup="$schimb" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="inaltimeaMaximala" layoutX="185.0" prefHeight="400.0" prefWidth="409.0" style="-fx-background-color: #2A2E37;" visible="false">
+         <children>
+            <Label layoutX="106.0" layoutY="26.0" stylesheets="@style.css" text="Determina inaltimea maximala">
+               <font>
+                  <Font name="Ink Free" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="90.0" stylesheets="@style.css" text="Inaltimea maximala" />
+            <Label fx:id="inaltimeaMaximLabel" layoutX="312.0" layoutY="90.0" stylesheets="@style.css" text="0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
